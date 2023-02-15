@@ -3,13 +3,12 @@ def run_rubocop_all
 end
 
 def run_rubocop_fast
-  `rubocop --fail-fast    `
+  system("rubocop app/**/*.rb --fail-fast    ")
 end
 
 
 param = ARGV[0]
 puts param
 
-puts run_rubocop_fast
+exit 1 unless run_rubocop_fast
 
-exit 1
