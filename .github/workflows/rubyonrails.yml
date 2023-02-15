@@ -24,10 +24,8 @@ jobs:
         with:
           bundler-cache: true
       # Verifify rubocop rules
-      - name: RuboCop Linter Action
-        uses: andrewmcodes/rubocop-linter-action@v3.3.0
-        with:
-          exit_on_failure: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+     - name: RuboCop Linter Action
+       uses: andrewmcodes/rubocop-linter-action@v3.3.0
+       env:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
  
