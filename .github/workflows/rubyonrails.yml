@@ -28,5 +28,6 @@ jobs:
         uses: andrewmcodes/rubocop-linter-action@v3.3.0
         with:
           exit_on_failure: true
-
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
  
