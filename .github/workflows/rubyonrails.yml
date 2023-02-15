@@ -24,9 +24,11 @@ jobs:
         with:
           bundler-cache: true
 
-
+      # Install rubocop on local
+      - name: RuboCop Install
+        run: gem install rubocop
+ 
       # Verifify rubocop rules
       - name: RuboCop Linter Action
-        run: gem install rubocop
         run: ruby .github/jobs/ppr.rb
  
