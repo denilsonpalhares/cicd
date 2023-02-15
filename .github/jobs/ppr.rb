@@ -11,3 +11,5 @@ param = ARGV[0]
 puts param
 
 puts run_rubocop_fast
+
+exit 1
