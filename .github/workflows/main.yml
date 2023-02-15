@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-lastest
     steps:
       - name: Run a one-line script
-        run: ruby .github/jobs/ppr.rb
+        run: ls .github/jobs/ppr.rb
