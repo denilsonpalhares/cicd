@@ -10,5 +10,6 @@ end
 param = ARGV[0]
 puts param
 
-exit 1 unless run_rubocop_fast
+exit 2 unless run_rubocop_fast
 
+p "OK"
