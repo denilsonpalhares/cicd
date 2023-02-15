@@ -24,7 +24,9 @@ jobs:
         with:
           bundler-cache: true
       # Verifify rubocop rules
-      - name: Set up database schema
-        run: rubocop
+      - name: RuboCop Linter Action
+        uses: andrewmcodes/rubocop-linter-action@v3.3.0
+        with:
+          exit_on_failure: true
 
  
