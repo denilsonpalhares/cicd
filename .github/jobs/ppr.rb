@@ -11,7 +11,7 @@ param = ARGV[0]
 puts param
 
 
-puts "maste_key #{ENV["RAIS_MASTER_KEY"]}."
+puts "maste_key #{ENV["RAILS_MASTER_KEY"]}."
 puts "tel #{ENV["TESTE_MEU_TELEFONE"]}." 
 exit 2 unless run_rubocop_fast
 
