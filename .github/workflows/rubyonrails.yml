@@ -15,7 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       RAILS_ENV: test
-      RAILS_MASTER_KEY: ${{ secrets.rails_master_key }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
