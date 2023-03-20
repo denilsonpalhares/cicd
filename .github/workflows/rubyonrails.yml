@@ -32,4 +32,9 @@ jobs:
       # Verifify rubocop rules
       - name: RuboCop Linter Action
         run: ruby .github/jobs/ppr.rb
+
+      # Run tests
+      - name: Run tests
+      run: rspec
+
  
