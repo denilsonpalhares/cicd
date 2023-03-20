@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       RAILS_ENV: test
-      SEGREDO: ${{ secrets.SEGREDO }}
+      RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
