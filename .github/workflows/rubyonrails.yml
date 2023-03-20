@@ -35,8 +35,8 @@ jobs:
 
       # Run tests
       - name: Run tests
-      run: bundle exec rspec
+        run: bundle exec rspec
 
-      
+
  
  
