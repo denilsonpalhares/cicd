@@ -10,8 +10,9 @@ end
 param = ARGV[0]
 puts param
 
-puts "segredo #{ENV["SEGREDO"]}."
-puts ENV["SEGREDO"] == "267befda0092784dc47464b146a9c7c8"
+puts "RAILS_MASTER_KEY #{ENV["RAILS_MASTER_KEY"]}."
+puts ENV["RAILS_MASTER_KEY"] == "267befda0092784dc47464b146a9c7c8"
+puts "env",Cicd::Application.credentials.config
 
 puts "tel #{ENV["TESTE_MEU_TELEFONE"]}." 
 exit 2 unless run_rubocop_fast
