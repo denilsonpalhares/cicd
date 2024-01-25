@@ -5,6 +5,7 @@ RSpec.describe Rails do
     it "Meu telefone" do
       var = ENV["teste_meu_telefone"]
       10.times do |i|
+        sleep(60)
         puts i
       end
       expect(var).to eq("123457")
